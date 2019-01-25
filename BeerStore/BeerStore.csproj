@@ -75,6 +75,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Beer.cs" />
+    <Compile Include="Models\BeerType.cs" />
+    <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\Clasification.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
+    <Compile Include="Models\Place.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
