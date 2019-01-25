@@ -64,6 +64,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataAccess\MysqlConnection.cs" />
+    <Compile Include="Enum\CategoryType.cs" />
+    <Compile Include="Enum\Color.cs" />
+    <Compile Include="Enum\Fermentation.cs" />
+    <Compile Include="Enum\MeasurementUnit.cs" />
+    <Compile Include="Enum\PresentationType.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
