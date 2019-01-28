@@ -9,7 +9,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <materialDesign:Card Padding="32" Margin="16">
-            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">Material Design Test</TextBlock>
+            <ListBox x:Name="LBTestDB" Style="{DynamicResource MaterialDesignListBox}"></ListBox>
         </materialDesign:Card>
     </Grid>
 </Window>

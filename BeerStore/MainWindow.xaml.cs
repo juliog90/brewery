@@ -23,6 +23,9 @@ namespace BeerStore
         public MainWindow()
         {
             InitializeComponent();
+            List<Beer> beers = new List<Beer>();
+            beers = Beer.GetAll();
+            LBTestDB.ItemsSource = beers;
         }
     }
 }
