@@ -8,8 +8,8 @@
         mc:Ignorable="d"        
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <materialDesign:Card Padding="32" Margin="16">
-            <ListBox x:Name="LBTestDB" Style="{DynamicResource MaterialDesignListBox}"></ListBox>
+        <materialDesign:Card Padding="30" Margin="0">
+            <TextBlock>HOLA MUNDO</TextBlock>
         </materialDesign:Card>
     </Grid>
 </Window>
