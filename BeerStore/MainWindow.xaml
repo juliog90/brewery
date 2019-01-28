@@ -1,6 +1,5 @@
 ﻿<Window x:Class="BeerStore.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -8,8 +7,5 @@
         mc:Ignorable="d"        
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <materialDesign:Card Padding="30" Margin="0">
-            <TextBlock>HOLA MUNDO</TextBlock>
-        </materialDesign:Card>
     </Grid>
 </Window>

@@ -43,7 +43,7 @@ public class MySqlConnection
         }
         else
             connectionOpen = true; //connection was already open
-        //return result
+        //return result5
         return connectionOpen;
     }
 

@@ -25,7 +25,7 @@ namespace BeerStore
             InitializeComponent();
             List<Beer> beers = new List<Beer>();
             beers = Beer.GetAll();
-//            LBTestDB.ItemsSource = beers;
+//            LBTestDB.ItemsSource = beers
         }
     }
 }
