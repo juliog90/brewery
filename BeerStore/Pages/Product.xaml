@@ -1,0 +1,33 @@
+﻿<Page x:Class="BeerStore.Pages.Product"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BeerStore.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      Title="Menu">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0">Beers</Button>
+            <Button Grid.Row="1">Categorias</Button>
+            <Button Grid.Row="2">Paises</Button>
+            <Button Grid.Row="3">Ordenes</Button>
+            <Button Grid.Row="4">Ajustes</Button>
+            <Button Grid.Row="5">Acerca De</Button>
+            <Frame Name="Menu" Navigated="Menu_Navigated"></Frame>
+        </Grid>
+    </Grid>
+</Page>

@@ -13,18 +13,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BeerStore
+namespace BeerStore.Pages
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Interaction logic for Menu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Product : Page
     {
-        public MainWindow()
+        private Window products;
+
+        public Product(Window products)
         {
             InitializeComponent();
-            Page menu = new Pages.Product(this);
-            Content = menu.Content;
+            this.products = products;
+        }
+
+        private void Menu_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }
