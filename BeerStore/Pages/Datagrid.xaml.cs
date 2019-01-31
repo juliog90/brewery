@@ -23,6 +23,7 @@ namespace BeerStore.Pages
         public Datagrid()
         {
             InitializeComponent();
+
         }
     }
 }

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:BeerStore.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="525"
-      Title="Datagrid">
+      Title="DatosCervezas">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -17,7 +17,7 @@
         <!--AutoGenerateColumns: No genera columnas automaticamente-->
         <!--CanUserAddRows: No permite que el usuario agregue Filas-->
         <DataGrid Grid.Column="2"
-                  Name="BeersData"
+                  Name="InfoCerveza"
                   SelectionMode="Single" 
                   AutoGenerateColumns="False"
                   CanUserAddRows="False">
