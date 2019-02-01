@@ -23,7 +23,7 @@ namespace BeerStore.Pages
         public Datagrid()
         {
             InitializeComponent();
-
+            InfoCerveza.ItemsSource = Beer.GetAll();
         }
     }
 }
