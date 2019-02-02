@@ -25,10 +25,5 @@ namespace BeerStore.Pages
         {
             InitializeComponent();
         }
-
-        private void Menu_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
     }
 }

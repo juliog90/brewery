@@ -8,7 +8,7 @@
       d:DesignHeight="480" d:DesignWidth="480"
       Title="DatosCervezas">
 
-    <Grid Margin="10,0,0,0">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
@@ -19,10 +19,10 @@
                   Name="InfoCerveza"
                   SelectionMode="Single" 
                   AutoGenerateColumns="False"
-                  CanUserAddRows="False" Margin="3,0,-3,0">
+                  CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Nombre" Width="auto"/>
-                <DataGridTextColumn Binding="{Binding Color}" Header="Marca" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding Brand}" Header="Marca" Width="auto"/>
                 <DataGridTextColumn Binding="{Binding Path=Price, StringFormat=C}" Header="Categoria" Width="auto"/>
                 <DataGridTextColumn Binding="{Binding Brand}" Header="Contenido" Width="auto"/>
                 <DataGridTextColumn Binding="{Binding Size}" Header="Unidad" Width="auto"/>

@@ -7,10 +7,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="480" d:DesignWidth="160"
       Title="Menu">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-        </Grid.ColumnDefinitions>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -29,5 +25,4 @@
             <Button Grid.Row="5">Ayuda</Button>
             <Button Grid.Row="6">Acerca De</Button>
         </Grid>
-    </Grid>
 </Page>
