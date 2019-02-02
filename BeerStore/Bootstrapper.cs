@@ -1,4 +1,5 @@
-﻿using Caliburn.Micro;
+﻿using BeerStore.ViewModels;
+using Caliburn.Micro;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,9 @@ using System.Windows;
 
 namespace BeerStore
 {
-    public class Bootstraper : BootstrapperBase
+    public class Bootstrapper : BootstrapperBase
     {
-        public Bootstraper()
+        public Bootstrapper()
         {
             Initialize();
         }

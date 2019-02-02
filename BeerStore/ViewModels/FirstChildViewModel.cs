@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace BeerStore.ViewModels
 {
-    public class ShellViewModel : Screen
+    public class FirstChildViewModel : Screen
     {
-
     }
 }
