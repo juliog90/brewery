@@ -21,14 +21,15 @@
                   AutoGenerateColumns="False"
                   CanUserAddRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Name}" Header="Nombre" Width="auto"/>
                 <DataGridTextColumn Binding="{Binding Brand}" Header="Marca" Width="auto"/>
-                <DataGridTextColumn Binding="{Binding Path=Price, StringFormat=C}" Header="Categoria" Width="auto"/>
-                <DataGridTextColumn Binding="{Binding Brand}" Header="Contenido" Width="auto"/>
-                <DataGridTextColumn Binding="{Binding Size}" Header="Unidad" Width="auto"/>
-                <DataGridTextColumn Binding="{Binding Height}" Header="Presentación" Width="auto"/>
-                <DataGridTextColumn Binding="{Binding Width}" Header="Precio" Width="auto"/>
-                <DataGridTextColumn Binding="{Binding Depth}" Header="Imagen" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding Brand.Country}" Header="Pais" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding Clasification.BeerType}" Header="Tipo" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Price, StringFormat=C}" Header="Precio" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding Clasification}" Header="Clasificación" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding Fermlevel}" Header="Fermentado" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding GradoAlcohol }" Header="Grado" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding MeasurementUnit}" Header="Medida" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding Image}" Header="Imagen" Width="auto"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

@@ -16,19 +16,14 @@ using System.Windows.Shapes;
 namespace BeerStore.Pages
 {
     /// <summary>
-    /// Interaction logic for Menu.xaml
+    /// Interaction logic for Categorias.xaml
     /// </summary>
-    public partial class Menu : Page
+    public partial class Categorias : Page
     {
-        //private Window principal;
-        public Menu()
+        public Categorias()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            TiposCerveza.ItemsSource = BeerType.GetAll();
         }
     }
 }

@@ -97,6 +97,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Tipos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CervezasDatos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -118,6 +122,9 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Place.cs" />
+    <Compile Include="Pages\Tipos.xaml.cs">
+      <DependentUpon>Tipos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CervezasDatos.xaml.cs">
       <DependentUpon>CervezasDatos.xaml</DependentUpon>
     </Compile>
