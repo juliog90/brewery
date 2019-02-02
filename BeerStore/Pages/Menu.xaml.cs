@@ -18,14 +18,12 @@ namespace BeerStore.Pages
     /// <summary>
     /// Interaction logic for Menu.xaml
     /// </summary>
-    public partial class Producto : Page
+    public partial class Menu : Page
     {
-        private Window productos;
-
-        public Producto(Window productos)
+        //private Window principal;
+        public Menu()
         {
             InitializeComponent();
-            this.productos = productos;
         }
 
         private void Menu_Navigated(object sender, NavigationEventArgs e)

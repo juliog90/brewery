@@ -5,6 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BeerStore"
         mc:Ignorable="d"        
-        Title="Administrador Cerveceria" Height="350" Width="525">
-    <Frame Name="Menu"></Frame>
+        Title="Administrador Cerveceria" Height="480" Width="640">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+       <Frame Name="Menu" Grid.Column="1"></Frame>
+       <Frame Name="Contenido" Grid.Column="2"></Frame>
+    </Grid>
 </Window>

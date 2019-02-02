@@ -23,9 +23,10 @@ namespace BeerStore
         public MainWindow()
         {
             InitializeComponent();
-            Page menu = new Pages.Producto(this);
-            Content = menu.Content;
-
+            Page menu = new Pages.Menu();
+            Page datosCervezas = new Pages.DatosCervezas();
+            datosCervezas.Content = menu.Content;
+            //Contenido.Content = datosCervezas.Content;  
         }
     }
 }

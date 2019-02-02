@@ -18,11 +18,14 @@ namespace BeerStore.Pages
     /// <summary>
     /// Interaction logic for Datagrid.xaml
     /// </summary>
-    public partial class Datagrid : Page
+    public partial class DatosCervezas : Page
     {
-        public Datagrid()
+        public DatosCervezas()
         {
             InitializeComponent();
+
+            List<Beer> test = new List<Beer>();
+            test = Beer.GetAll();
             InfoCerveza.ItemsSource = Beer.GetAll();
         }
     }
