@@ -65,6 +65,7 @@
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Caliburn.Micro.3.2.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
       <Private>True</Private>
@@ -87,10 +88,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <None Include="Views\PrincipalView">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
+    </None>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -101,43 +102,47 @@
     <Compile Include="Enum\Fermentation.cs" />
     <Compile Include="Enum\MeasurementUnit.cs" />
     <Compile Include="Enum\PresentationType.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="ViewModels\CervezasDatosViewModel.cs" />
+    <Compile Include="ViewModels\MenuViewModel.cs" />
+    <Compile Include="ViewModels\PrincipalViewModel.cs" />
+    <Compile Include="ViewModels\TiposViewModel.cs" />
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>PrincipalView</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\Tipos.xaml">
+    <None Include="Views\TiposVIew">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <Page Include="Views\CervezasDatosView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\CervezasDatos.xaml">
+    <None Include="Views\MenuView">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\Menu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\Beer.cs" />
-    <Compile Include="Models\BeerType.cs" />
-    <Compile Include="Models\Brand.cs" />
-    <Compile Include="Models\City.cs" />
-    <Compile Include="Models\Clasification.cs" />
-    <Compile Include="Models\Country.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderDetail.cs" />
-    <Compile Include="Models\Place.cs" />
-    <Compile Include="Pages\Tipos.xaml.cs">
-      <DependentUpon>Tipos.xaml</DependentUpon>
+    <Compile Include="Models\AddressModel.cs" />
+    <Compile Include="Models\BeerModel.cs" />
+    <Compile Include="Models\BeerTypeModel.cs" />
+    <Compile Include="Models\BrandModel.cs" />
+    <Compile Include="Models\CityModel.cs" />
+    <Compile Include="Models\ClasificationModel.cs" />
+    <Compile Include="Models\CountryModel.cs" />
+    <Compile Include="Models\CustomerModel.cs" />
+    <Compile Include="Models\OrderModel.cs" />
+    <Compile Include="Models\OrderDetailModel.cs" />
+    <Compile Include="Models\PlaceModel.cs" />
+    <Compile Include="Views\Tipos.xaml.cs">
+      <DependentUpon>TiposVIew</DependentUpon>
     </Compile>
-    <Compile Include="Pages\CervezasDatos.xaml.cs">
-      <DependentUpon>CervezasDatos.xaml</DependentUpon>
+    <Compile Include="Views\CervezasDatosView.xaml.cs">
+      <DependentUpon>CervezasDatosView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Menu.xaml.cs">
-      <DependentUpon>Menu.xaml</DependentUpon>
+    <Compile Include="Views\Menu.xaml.cs">
+      <DependentUpon>MenuView</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -174,6 +179,7 @@
   <ItemGroup>
     <Content Include="Database Script\brewery.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
